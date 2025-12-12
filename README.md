@@ -24,7 +24,7 @@ Upload your dataset, explore it visually, clean data, train ML models, compare t
   - Drop missing rows
   - Custom fill values  
 - Normalization:
-  - Standard, MinMax, Robust  
+  - Standard, MinMax, Robust 
 - Encoding:
   - One-hot (get_dummies)
   - Label Encoding  
@@ -37,9 +37,9 @@ Supported tasks:
 Models:
 - Linear Regression
 - Random Forest
-- XGBoost  
+- XGBoost   
+- Logistic Regression
 - Decision Trees  
-- Logistic Regression  
 - KNN  
 - SVM  
 - And more…
@@ -62,5 +62,6 @@ Export automatic ML report including:
 ---
 
 ## 📸 App Preview (Add your image here)
-Add screenshot:
+![App Screenshot](./images/app_preview.png)
+
 
