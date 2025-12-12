@@ -1,0 +1,7 @@
+[theme]
+base="light"
+primaryColor="#3da9fc"              # Blue (buttons, sliders, checkbox active)
+backgroundColor="#fffffe"           # Main background
+secondaryBackgroundColor="#f2f6fa"  # Sidebar background (soft blue-white)
+textColor="#094067"                 # Heading text color
+font="sans serif"

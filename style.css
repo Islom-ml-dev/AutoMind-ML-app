@@ -1,0 +1,134 @@
+/* =========================================
+   GLOBAL COLOR VARIABLES (easy to edit)
+========================================= */
+:root {
+    --bg: #fffffe;
+    --headline: #094067;
+    --paragraph: #5f6c7b;
+    --button: #3da9fc;
+    --button-text: #ffffff;
+    --secondary: #90b4ce;
+    --sidebar-bg: #f2f6fa;
+}
+
+/* =========================================
+   MAIN APP BACKGROUND
+========================================= */
+[data-testid="stAppViewContainer"] {
+    background-color: var(--bg) !important;
+    color: var(--headline);
+}
+
+/* Transparent header */
+[data-testid="stHeader"] {
+    background-color: transparent !important;
+}
+
+/* =========================================
+   SIDEBAR
+========================================= */
+section[data-testid="stSidebar"] {
+    background-color: var(--sidebar-bg) !important;
+    padding: 20px;
+    border-right: 1px solid var(--secondary);
+}
+
+section[data-testid="stSidebar"] h1,
+section[data-testid="stSidebar"] h2,
+section[data-testid="stSidebar"] h3 {
+    color: var(--headline);
+}
+
+section[data-testid="stSidebar"] p,
+section[data-testid="stSidebar"] li {
+    color: var(--paragraph);
+}
+
+/* Sidebar code block (pip install) */
+section[data-testid="stSidebar"] pre,
+section[data-testid="stSidebar"] code {
+    background-color: var(--headline) !important;
+    color: #ffffff !important;
+    border-radius: 6px;
+    padding: 6px 10px;
+}
+
+/* =========================================
+   BUTTONS
+========================================= */
+div.stButton > button {
+    background-color: var(--button) !important;
+    color: var(--button-text) !important;
+    border-radius: 10px;
+    border: 1px solid var(--headline);
+    padding: 0.4rem 1rem;
+    transition: 0.2s ease;
+    font-weight: 600;
+}
+
+div.stButton > button:hover {
+    background-color: #1f8edc !important;
+    transform: scale(1.03);
+}
+
+/* =========================================
+   TABS
+========================================= */
+button[role="tab"] {
+    border-radius: 999px !important;
+    padding: 0.25rem 1rem !important;
+    border: 1px solid transparent !important;
+    font-weight: 500 !important;
+    color: var(--paragraph) !important;
+}
+
+/* Active tab */
+button[role="tab"][aria-selected="true"] {
+    background-color: var(--button) !important;
+    color: var(--button-text) !important;
+    border-color: var(--headline) !important;
+}
+
+/* Hover tab */
+button[role="tab"][aria-selected="false"]:hover {
+    background-color: var(--secondary) !important;
+    color: var(--headline) !important;
+}
+
+/* =========================================
+   SLIDERS (modern + blue + animation)
+========================================= */
+div[data-baseweb="slider"] > div > div {
+    background-color: var(--secondary) !important;
+    border-radius: 999px;
+}
+
+div[data-baseweb="slider"] > div > div > div[role="slider"]::before {
+    background-color: var(--button) !important;
+    border-radius: 999px;
+}
+
+div[data-baseweb="slider"] div[role="slider"] {
+    background-color: var(--button) !important;
+    border: 2px solid var(--headline) !important;
+    width: 18px;
+    height: 18px;
+    border-radius: 999px;
+    transition: 0.15s ease;
+}
+
+div[data-baseweb="slider"] div[role="slider"]:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 0 4px rgba(61, 169, 252, 0.25);
+}
+
+div[data-baseweb="slider"] div[role="slider"]:active {
+    transform: scale(1.05);
+}
+
+/* =========================================
+   ALERT BOXES
+========================================= */
+.stAlert {
+    border-radius: 10px !important;
+}
